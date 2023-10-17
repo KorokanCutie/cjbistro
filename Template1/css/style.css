@@ -152,7 +152,7 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .4), rgba(15, 23, 43, .4)) url(../img/bg-hero1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,6 +166,25 @@
     100% { 
         transform: rotate(360deg); 
     } 
+}
+
+#bgImg {
+	animation-name: bgChange;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+	
+@keyframes bgChange{
+   0%{
+     background-image: linear-gradient(rgba(15, 23, 43, .4), rgba(15, 23, 43, .4)), url(../img/bg-hero1.jpg);
+   }
+   50%{
+     background-image: linear-gradient(rgba(15, 23, 43, .4), rgba(15, 23, 43, .4)), url(../img/bg-hero2.jpg);
+   }
+   100%{
+     background-image: linear-gradient(rgba(15, 23, 43, .4), rgba(15, 23, 43, .4)), url(../img/bg-hero3.jpg);
+   }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
